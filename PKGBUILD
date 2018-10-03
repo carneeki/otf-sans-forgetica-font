@@ -16,8 +16,13 @@ provides=($_pkgname)
 source=('https://www.sansforgetica.com.au/Common/Zips/Sans%20Forgetica.zip')
 md5sums=('SKIP')
 
+prepare() {
+    cd "$srcdir"
+    mv "Sans Forgetica" $_pkgname
+}
+
 pkgver() {
-    cd "$srcdir/Sans\ Forgetica/"
+    cd "$srcdir/$_pkgname"
     git describe --tags --long | sed -r -e 's,^[^0-9]*,,;s,([^-]*-g),r\1,;s,[-_],.,g'
 }
 
