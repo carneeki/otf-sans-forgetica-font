@@ -23,7 +23,7 @@ prepare() {
 
 pkgver() {
     cd "$srcdir/$_pkgname"
-    git describe --all --long | sed -r -e 's,^[^0-9]*,,;s,([^-]*-g),r\1,;s,[-_],.,g'
+    git describe --long --tags | sed 's/\([^-]*-g\)/r\1/;s/-/./g'
 }
 
 package() {
