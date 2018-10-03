@@ -3,7 +3,7 @@
 _pkgname=SansForgeticaFont
 
 pkgname=otf-sans-forgetica-font
-pkgver=1
+pkgver=v0.1.1.r0.gf0569d9
 pkgrel=1
 pkgdesc="A font that is scientifically designed to help you remember your study notes."
 arch=('any')
