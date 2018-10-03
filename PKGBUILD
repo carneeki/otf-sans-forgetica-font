@@ -3,7 +3,7 @@
 _pkgname=SansForgeticaFont
 
 pkgname=otf-sans-forgetica-font
-pkgver=1.0
+pkgver=r0.gc5e8777
 pkgrel=1
 pkgdesc="A font that is scientifically designed to help you remember your study notes."
 arch=('any')
@@ -23,7 +23,7 @@ prepare() {
 
 pkgver() {
     cd "$srcdir/$_pkgname"
-    git describe --tags --long | sed -r -e 's,^[^0-9]*,,;s,([^-]*-g),r\1,;s,[-_],.,g'
+    git describe --all --long | sed -r -e 's,^[^0-9]*,,;s,([^-]*-g),r\1,;s,[-_],.,g'
 }
 
 package() {
