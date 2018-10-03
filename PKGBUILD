@@ -3,11 +3,11 @@
 _pkgname=SansForgeticaFont
 
 pkgname=otf-sans-forgetica-font
-pkgver=r0.gc5e8777
+pkgver=1
 pkgrel=1
 pkgdesc="A font that is scientifically designed to help you remember your study notes."
 arch=('any')
-url="https://github.com/carneeki/SansFranciscoFont"
+url="https://github.com/carneeki/otf-sans-forgetica-font"
 license=('unknown')
 groups=()
 depends=()
